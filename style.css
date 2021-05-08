@@ -1,0 +1,43 @@
+#clock{
+    position: relative;/* to fix size of hand of hour,minute and second*/
+    background: url("clock.png") no-repeat;
+    height: 40vw;  /* 40% of screen */
+    width: 40vw;   /* 40% of screen */
+    background-size: 100%;  /* for full image of clock*/
+    margin: auto; /* for center*/
+}
+
+#hour{
+    position: absolute;  /* for fix hour hand  */
+   background-color: black;
+   width: 1.2%;  /* width of hour hand  */
+   height: 20%;  /* height of hour hand  */
+   top: 30%;    /* form top where we locate  */
+   left: 49.2%;   /* form left where we locate  */
+   /*display: none; /* fro debuging or hide the hour hand*/
+   transform-origin: bottom;/* rotate from bottom*/
+}
+
+#minute{
+    position: absolute;  /* for fix minute  hand  */
+   background-color: black;
+   width: 1%;  /* width of minute hand  */
+   height: 30%;  /* height of minute hand  */
+   top: 20%;    /* form top where we locate  */
+   left: 49.1%;   /* form left where we locate  */
+  /* display: none; /* fro debuging or hide the hour hand*/
+  opacity: 0.8;
+  transform-origin: bottom;/* rotate from bottom*/
+}
+
+#second{
+    position: absolute;  /* for fix minute  hand  */
+   background-color: black;
+   width: 0.8%;  /* width of minute hand  */
+   height: 42%;  /* height of minute hand  */
+   top: 8%;    /* form top where we locate  */
+   left: 49.4%;   /* form left where we locate  */
+   opacity: 0.8;
+   /*display: none; /* fro debuging or hide the hour hand*/
+   transform-origin: bottom;/* rotate from bottom*/
+}
